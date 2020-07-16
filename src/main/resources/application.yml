@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    generate-ddl: on
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/petz
+    username: petz
+    password: petz123
+    driverClassName: org.postgresql.Driver
